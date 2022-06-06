@@ -1,0 +1,250 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    padding: 8px 30px;
+    color: white;
+    background-color: black;
+    font-family: "poppins",sans-serif;
+}
+h1,h2{
+    color: whitesmoke;
+}
+.menu{
+    display: none;
+}
+p{
+    font-weight:600;
+    color: white;
+}
+.logos div>img{
+    width: 80%;
+    height: 80%;
+}
+.navbar{
+    margin-bottom: 40px;
+    padding: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+}
+.navbar>div{
+    display: inline-block;
+    display: flex;
+}
+.navbar p{
+    cursor: pointer;
+    margin: 0px 4%;
+}
+.get-in-touch p{
+    background-image: linear-gradient(to right, rgba(202, 202, 14, 0.904) ,rgb(170, 170, 21));
+    color: rgba(0, 0, 0, 0.959);
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+}
+.intro{
+    width: 45%;
+}
+.intro>h1{
+    font-size: 7vmin;
+}
+.intro>p{
+    margin-top: 40px;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(6,17%);
+    margin: 50px 0px;
+}
+.illustration{
+    align-items: center;
+    text-align: left;
+    background-color: wheat;
+    padding: 40px;
+    display: inline-block;
+    display: flex;
+    margin-top:0% 12%;
+}
+
+.illustration>div{
+    width: 60%;
+}
+.illustration div>p{
+    color: black;
+    margin-top: 20px;
+}
+.illustration div>h2{
+    color: black;
+    margin-top: 20px;
+}
+.illustration div>img{
+    width: 80%;
+}
+.illustration-cta{
+    text-align: center;
+    width: 80%;
+    padding: 4px;
+    line-height: 25px;
+}
+.introduction{
+    text-align: start;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 40% 40%;
+    margin: 40px -1.9%;
+    padding: 50px 30px;
+    color: white;
+    background-color: rgb(31, 29, 29);
+}
+.introduction div>h2{
+    margin-bottom: 20px;
+    font-size: 4vmin;
+}
+.bottom-content{
+    width: 30%;
+    padding: 20px 40px;
+}
+.bottom-content>p{
+    line-height: 20px;
+    margin-top: 10px;
+}
+footer{
+    margin-bottom: -5px;
+    margin-left: -2.1%;
+    margin-right: -2.1%;
+    margin-top: 40px;
+    padding: 10px;
+    background-color:rgb(31, 29, 29) ;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.get-in-touch2{
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    width: 40%;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(202, 202, 14, 0.904) ,rgb(170, 170, 21));
+}
+.get-in-touch p:hover{
+    background-image: linear-gradient(to right,green,yellow, limegreen,green);
+    width: 50%;
+}
+.get-in-touch p:active {
+    background-image: linear-gradient(to right,green,yellow, limegreen,green);
+    width: 50%;
+}
+.get-in-touch2:hover{
+    background-image: linear-gradient(to right,green,yellow, limegreen,green);
+    width: 50%;
+}
+
+
+@media screen and (max-width:807px)  {
+    .navbar>div{
+        display: none;
+    }
+    .intro{
+        width: 90%;
+    }
+    .logos{
+        grid-template-columns: 32% 32% 32%;
+    }
+.illustration{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 2px;
+    text-align: start;
+}
+.illustration-cta{
+    color: white;
+    text-align: start;
+}
+.illustration>div{
+    color: white;
+    width: 100%;
+    border-top: 2px black solid;
+    padding: 10px;
+}
+.illustration>div p{
+    color: white;
+}
+
+.illustration>div h2{
+    color: white;
+}
+.introduction{
+    display: block;
+    text-align: start;
+}
+.bottom-content{
+    width: 70%;
+}
+.menu{
+    display: block;
+}
+.navbar{
+        grid-template-columns: 90% 10%;
+}
+}
+@media screen and (max-width:300px) {
+
+    body{
+        padding: 20px;
+    }
+    .illustration{
+        width: 100%;
+    }
+    h2{
+        font-size: 7vmin;
+    }
+    h3{
+        font-size: 7vmin;
+        grid-template-columns: 70% 30%;
+    }
+    .menu{
+        margin-left: 60%;
+    }
+   
+    p{
+        font-weight: 100;
+        text-align: start;
+    }
+    .logos{
+        grid-template-columns: 50% 50%;
+        
+    }
+    .logos>div{
+    margin-bottom: 10px;
+    }
+    .introduction{
+        padding: 10px;
+    }
+    .intro>p{
+        font-size: 6vmin;
+    }
+    .navbar{
+        grid-template-columns: 50% 50%;
+        padding: 1px;
+    }
+    .introduction>div h2{
+        font-size: 7vmin;
+    }
+    .introduction>div p{
+        font-size: 5.5vmin;
+    }
+    .bottom-content{
+        padding: 6px;
+    }
+    .illustration-cta > p{
+        font-size: 5.5vmin;
+    }
+    .get-in-touch2{
+        padding: 9px;
+        width: 50%;
+    }
+}
